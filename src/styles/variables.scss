@@ -1,0 +1,16 @@
+$color-yellow: #feda6a;
+$color-silver: #d4d4dc;
+$color-gray: #393f4d;
+$color-slate: #1d1e22;
+$color-brown: #ae987a;
+
+@font-face {
+    font-family: 'Trajan Pro';
+	src: url('fonts/TrajanPro-Regular.eot'),
+		 url('fonts/TrajanPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/TrajanPro-Regular.woff2') format('woff2'),
+         url('fonts/TrajanPro-Regular.woff') format('woff'),
+         url('fonts/TrajanPro-Regular.svg#TrajanPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

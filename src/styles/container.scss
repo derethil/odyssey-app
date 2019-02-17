@@ -1,0 +1,11 @@
+.container {
+	user-select: none;
+	color: $color-silver;
+	background-image: linear-gradient(to bottom right, $color-slate, $color-gray);
+
+	display: grid;
+	grid-template-rows: [header-s] 190px [header-e slideshow-s] 1fr [slideshow-e desc-s] 1fr [desc-e];
+
+	width: 100%;
+	height: 100vh
+}
