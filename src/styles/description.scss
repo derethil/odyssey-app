@@ -1,0 +1,23 @@
+.desc-container {
+    grid-row: desc-s/desc-e;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .location {
+        font-size: 36pt;
+    }
+
+    .wiki {
+        font-size: 28pt;
+        color: $color-brown;
+
+        transition: ease .1s ;
+	
+		&:hover {
+            font-size: 32pt;
+            margin-top: 4pt;
+		}
+    }
+}

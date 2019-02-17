@@ -4,8 +4,8 @@
 	background-image: linear-gradient(to bottom right, $color-slate, $color-gray);
 
 	display: grid;
-	grid-template-rows: [header-s] 190px [header-e slideshow-s] 1fr [slideshow-e desc-s] 1fr [desc-e];
+	grid-template-rows: [header-s] 190px [header-e slideshow-s] 1fr [slideshow-e gap-s] 75px [gap-e desc-s] 1fr [desc-e];
 
-	width: 100%;
+	width: 100vw;
 	height: 100vh
 }
