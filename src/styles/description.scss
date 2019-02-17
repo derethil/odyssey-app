@@ -1,12 +1,17 @@
 .desc-container {
     grid-row: desc-s/desc-e;
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: [title-s] 80px [title-e desc-s] 80px [link-e desc-s] 1fr [desc-e];
+
+    justify-items: center;
     align-items: center;
 
+
     .location {
+        margin-top: 20px;
         font-size: 36pt;
+
     }
 
     .wiki {
@@ -17,7 +22,15 @@
 	
 		&:hover {
             font-size: 32pt;
-            margin-top: 4pt;
+            margin-bottom: 4pt;
 		}
+    }
+
+    .description {
+        width: 1100px;
+        align-self: flex-start;
+        text-align: center;
+
+        font-size: 17pt;
     }
 }

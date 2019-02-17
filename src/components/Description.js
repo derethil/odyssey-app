@@ -4,8 +4,9 @@ class Description extends Component {
 	render() {
 		return (
 			<div className="desc-container">
-				<div className="location">Lokris, Greece - 431 BC</div>
-				<a href="http://wikipedia.org" className="wiki">Wikipedia Link</a>
+				<div className="location">{this.props.location}Greece - 431 BCE</div>
+				<a href={this.props.link} className="wiki">Wikipedia Link</a>
+				<div className = "description">{this.props.description}</div>
 			</div>
 		)
 	}
