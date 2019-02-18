@@ -11,17 +11,19 @@ class App extends Component {
   state = {}
 
   componentWillMount() {
-    var data = Data;
-    this.state = data[0]
+    var randomIndex= Math.floor(1 + (Math.random() * 89));
+
+    this.setState({
+      index: Data[randomIndex].index, 
+      location: Data[randomIndex].location,
+      link: Data[randomIndex].link,
+      description: Data[randomIndex].description
+    });
   }
 
-  
-
   onItemClick(e) {
-    var data = Data;
     e.preventDefault()
     var direction = (e.target.className === "fas fa-angle-right") ? 1 : -1
-
     var newSlide = this.state.index + direction;
 
     if (newSlide === 0) newSlide = 88;
@@ -29,12 +31,11 @@ class App extends Component {
 
     this.setState({ 
       index: newSlide, 
-      location: data[newSlide-1].location,
-      link: data[newSlide-1].link,
-      description: data[newSlide-1].description
+      location: Data[newSlide-1].location,
+      link: Data[newSlide-1].link,
+      description: Data[newSlide-1].description
     });
   }
-
 
   render() {
     return (
