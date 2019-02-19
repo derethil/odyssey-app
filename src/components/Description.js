@@ -5,7 +5,7 @@ class Description extends Component {
 		return (
 			<div className="desc-container">
 				<div className="location">{this.props.location}Greece - 431 BCE</div>
-				<a href={this.props.link} className="wiki">Wikipedia Link</a>
+				<a href={this.props.link} className="wiki" target="__blank">Wikipedia Link</a>
 				<div className = "description">{this.props.description}</div>
 			</div>
 		)
