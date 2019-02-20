@@ -1,5 +1,6 @@
 .desc-container {
     grid-row: desc-s/desc-e;
+    user-select: text;
 
     display: grid;
     grid-template-rows: [title-s] 80px [title-e desc-s] 80px [link-e desc-s] 1fr [desc-e];
@@ -31,6 +32,6 @@
         align-self: flex-start;
         text-align: center;
 
-        font-size: 17pt;
+        font-size: 15.5pt;
     }
 }

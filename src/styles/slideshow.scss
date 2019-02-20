@@ -2,12 +2,13 @@
 	grid-row: slideshow-s/slideshow-e;
 
 	display: grid;
-	grid-template-columns: [left-arrow-s] 1fr [left-arrow-e img-s] 52vw [img-e right-arrow-s] 1fr [right-arrow-e];
+
+	grid-template-columns: [left-arrow-s] 1fr [left-arrow-e img-s] 50vw [img-e right-arrow-s] 1fr [right-arrow-e];
 
 	align-items: center;
 
 	#slide {
-		width: 48vw;
+		width: 46vw;
 		height: auto;
 		border: 8px solid $color-silver;
 		border-radius: 4px;
@@ -21,7 +22,8 @@
 		color: $color-silver;
 		margin: 40px;
 	
-		transition: ease .1s ;
+		transition: ease .1s;
+		cursor: pointer;
 	
 		&:hover {
 			font-size: 100px;
