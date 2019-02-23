@@ -1,5 +1,6 @@
 .container {
 	user-select: none;
+	overflow-y: scroll;
 	color: $color-silver;
 	background-image: linear-gradient(to bottom right, $color-slate, $color-gray);
 
